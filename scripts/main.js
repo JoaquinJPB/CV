@@ -41,3 +41,14 @@ $('a.smooth-scroll')
     }
   }
 });
+
+let form = document.getElementById('form');
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  Swal.fire({
+    icon: 'error',
+    title: 'Algo ha salido mal',
+    text: 'Intentelo mas tarde o envie un correo a mi mail',
+    footer: '<a href="mailto:pastorebarriosjoaquin@gmail.com">pastorebarriosjoaquin@gmail.com</a>'
+    });
+});
