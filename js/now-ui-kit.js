@@ -235,12 +235,3 @@ function debounce(func, wait, immediate) {
         if (immediate && !timeout) func.apply(context, args);
     };
 };
-
-(function age(){
-    let birth = new Date('2000-05-03');
-
-    let age = new Date(new Date() - birth).getFullYear() - 1970;
-
-    let div_age = document.getElementById("age");
-    div_age.innerHTML=age;
-})();
